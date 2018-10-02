@@ -1,0 +1,462 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="100">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <df root="." name="0">
+      <df name=".piolibdeps">
+        <df name="Adafruit INA219_ID160">
+          <df name=".github">
+          </df>
+          <df name="examples">
+            <df name="getcurrent">
+            </df>
+          </df>
+          <in>Adafruit_INA219.cpp</in>
+          <in>Adafruit_INA219.h</in>
+        </df>
+        <df name="ArduinoJson_ID64">
+          <df name=".github">
+          </df>
+          <df name="examples">
+            <df name="JsonConfigFile">
+            </df>
+            <df name="JsonGeneratorExample">
+            </df>
+            <df name="JsonHttpClient">
+            </df>
+            <df name="JsonParserExample">
+            </df>
+            <df name="JsonServer">
+            </df>
+            <df name="JsonUdpBeacon">
+            </df>
+            <df name="ProgmemExample">
+            </df>
+            <df name="StringExample">
+            </df>
+          </df>
+          <df name="src">
+            <df name="ArduinoJson">
+              <df name="Data">
+                <in>Encoding.hpp</in>
+                <in>JsonBufferAllocated.hpp</in>
+                <in>JsonFloat.hpp</in>
+                <in>JsonInteger.hpp</in>
+                <in>JsonVariantAs.hpp</in>
+                <in>JsonVariantContent.hpp</in>
+                <in>JsonVariantDefault.hpp</in>
+                <in>JsonVariantType.hpp</in>
+                <in>List.hpp</in>
+                <in>ListConstIterator.hpp</in>
+                <in>ListIterator.hpp</in>
+                <in>ListNode.hpp</in>
+                <in>NonCopyable.hpp</in>
+                <in>ReferenceType.hpp</in>
+                <in>ValueSaver.hpp</in>
+              </df>
+              <df name="Deserialization">
+                <in>Comments.hpp</in>
+                <in>JsonParser.hpp</in>
+                <in>JsonParserImpl.hpp</in>
+                <in>StringWriter.hpp</in>
+              </df>
+              <df name="Polyfills">
+                <in>attributes.hpp</in>
+                <in>ctype.hpp</in>
+                <in>isFloat.hpp</in>
+                <in>isInteger.hpp</in>
+                <in>math.hpp</in>
+                <in>parseFloat.hpp</in>
+                <in>parseInteger.hpp</in>
+              </df>
+              <df name="Serialization">
+                <in>DummyPrint.hpp</in>
+                <in>DynamicStringBuilder.hpp</in>
+                <in>FloatParts.hpp</in>
+                <in>IndentedPrint.hpp</in>
+                <in>JsonPrintable.hpp</in>
+                <in>JsonSerializer.hpp</in>
+                <in>JsonSerializerImpl.hpp</in>
+                <in>JsonWriter.hpp</in>
+                <in>Prettyfier.hpp</in>
+                <in>StaticStringBuilder.hpp</in>
+                <in>StreamPrintAdapter.hpp</in>
+              </df>
+              <df name="StringTraits">
+                <in>ArduinoStream.hpp</in>
+                <in>CharPointer.hpp</in>
+                <in>FlashString.hpp</in>
+                <in>StdStream.hpp</in>
+                <in>StdString.hpp</in>
+                <in>StringTraits.hpp</in>
+              </df>
+              <df name="TypeTraits">
+                <in>EnableIf.hpp</in>
+                <in>FloatTraits.hpp</in>
+                <in>IsArray.hpp</in>
+                <in>IsBaseOf.hpp</in>
+                <in>IsChar.hpp</in>
+                <in>IsConst.hpp</in>
+                <in>IsFloatingPoint.hpp</in>
+                <in>IsIntegral.hpp</in>
+                <in>IsSame.hpp</in>
+                <in>IsSignedIntegral.hpp</in>
+                <in>IsUnsignedIntegral.hpp</in>
+                <in>IsVariant.hpp</in>
+                <in>RemoveConst.hpp</in>
+                <in>RemoveReference.hpp</in>
+              </df>
+              <in>Configuration.hpp</in>
+              <in>DynamicJsonBuffer.hpp</in>
+              <in>JsonArray.hpp</in>
+              <in>JsonArrayImpl.hpp</in>
+              <in>JsonArraySubscript.hpp</in>
+              <in>JsonBuffer.hpp</in>
+              <in>JsonBufferBase.hpp</in>
+              <in>JsonBufferImpl.hpp</in>
+              <in>JsonObject.hpp</in>
+              <in>JsonObjectImpl.hpp</in>
+              <in>JsonObjectSubscript.hpp</in>
+              <in>JsonPair.hpp</in>
+              <in>JsonVariant.hpp</in>
+              <in>JsonVariantBase.hpp</in>
+              <in>JsonVariantCasts.hpp</in>
+              <in>JsonVariantComparisons.hpp</in>
+              <in>JsonVariantImpl.hpp</in>
+              <in>JsonVariantOr.hpp</in>
+              <in>JsonVariantSubscripts.hpp</in>
+              <in>RawJson.hpp</in>
+              <in>StaticJsonBuffer.hpp</in>
+              <in>version.hpp</in>
+            </df>
+            <in>ArduinoJson.h</in>
+            <in>ArduinoJson.hpp</in>
+          </df>
+          <in>ArduinoJson.h</in>
+        </df>
+        <df name="AsyncMqttClient_ID346">
+          <df name="docs">
+          </df>
+          <df name="examples">
+            <df name="FullyFeatured-ESP32">
+            </df>
+            <df name="FullyFeatured-ESP8266">
+            </df>
+            <df name="FullyFeaturedSSL">
+              <df name="src">
+                <in>main.cpp</in>
+              </df>
+            </df>
+          </df>
+          <df name="scripts">
+            <df name="get-fingerprint">
+            </df>
+          </df>
+          <df name="src">
+            <df name="AsyncMqttClient">
+              <df name="Packets">
+                <in>ConnAckPacket.cpp</in>
+                <in>ConnAckPacket.hpp</in>
+                <in>Packet.hpp</in>
+                <in>PingRespPacket.cpp</in>
+                <in>PingRespPacket.hpp</in>
+                <in>PubAckPacket.cpp</in>
+                <in>PubAckPacket.hpp</in>
+                <in>PubCompPacket.cpp</in>
+                <in>PubCompPacket.hpp</in>
+                <in>PubRecPacket.cpp</in>
+                <in>PubRecPacket.hpp</in>
+                <in>PubRelPacket.cpp</in>
+                <in>PubRelPacket.hpp</in>
+                <in>PublishPacket.cpp</in>
+                <in>PublishPacket.hpp</in>
+                <in>SubAckPacket.cpp</in>
+                <in>SubAckPacket.hpp</in>
+                <in>UnsubAckPacket.cpp</in>
+                <in>UnsubAckPacket.hpp</in>
+              </df>
+              <in>Callbacks.hpp</in>
+              <in>DisconnectReasons.hpp</in>
+              <in>Flags.hpp</in>
+              <in>Helpers.hpp</in>
+              <in>MessageProperties.hpp</in>
+              <in>ParsingInformation.hpp</in>
+              <in>Storage.hpp</in>
+            </df>
+            <in>AsyncMqttClient.cpp</in>
+            <in>AsyncMqttClient.h</in>
+            <in>AsyncMqttClient.hpp</in>
+          </df>
+        </df>
+        <df name="AsyncTCP_ID1826">
+          <df name="src">
+            <in>AsyncTCP.cpp</in>
+            <in>AsyncTCP.h</in>
+          </df>
+          <df name="travis">
+          </df>
+        </df>
+        <df name="Bounce2_ID1106">
+          <df name="docs">
+            <df name="files">
+              <df name="search">
+              </df>
+            </df>
+          </df>
+          <df name="examples">
+            <df name="bounce">
+            </df>
+            <df name="bounce2buttons">
+            </df>
+            <df name="bounce_multiple">
+            </df>
+            <df name="change">
+            </df>
+            <df name="duration">
+            </df>
+            <df name="retrigger">
+            </df>
+          </df>
+          <df name="extras">
+          </df>
+          <df name="src">
+            <in>Bounce2.cpp</in>
+            <in>Bounce2.h</in>
+          </df>
+        </df>
+        <df name="ESP Async WebServer_ID306">
+          <df name="examples">
+            <df name="ESP_AsyncFSBrowser">
+              <df name="data">
+              </df>
+            </df>
+            <df name="simple_server">
+            </df>
+          </df>
+          <df name="src">
+            <in>AsyncEventSource.cpp</in>
+            <in>AsyncEventSource.h</in>
+            <in>AsyncJson.h</in>
+            <in>AsyncWebSocket.cpp</in>
+            <in>AsyncWebSocket.h</in>
+            <in>ESPAsyncWebServer.h</in>
+            <in>SPIFFSEditor.cpp</in>
+            <in>SPIFFSEditor.h</in>
+            <in>StringArray.h</in>
+            <in>WebAuthentication.cpp</in>
+            <in>WebAuthentication.h</in>
+            <in>WebHandlerImpl.h</in>
+            <in>WebHandlers.cpp</in>
+            <in>WebRequest.cpp</in>
+            <in>WebResponseImpl.h</in>
+            <in>WebResponses.cpp</in>
+            <in>WebServer.cpp</in>
+          </df>
+          <df name="travis">
+          </df>
+        </df>
+        <df name="ESPAsyncTCP_ID305">
+          <df name="examples">
+            <df name="ClientServer">
+              <df name="Client">
+                <in>config.h</in>
+              </df>
+              <df name="Server">
+                <in>config.h</in>
+              </df>
+            </df>
+            <df name="SyncClient">
+            </df>
+          </df>
+          <df name="src">
+            <in>AsyncPrinter.cpp</in>
+            <in>AsyncPrinter.h</in>
+            <in>ESPAsyncTCP.cpp</in>
+            <in>ESPAsyncTCP.h</in>
+            <in>ESPAsyncTCPbuffer.cpp</in>
+            <in>ESPAsyncTCPbuffer.h</in>
+            <in>SyncClient.cpp</in>
+            <in>SyncClient.h</in>
+            <in>async_config.h</in>
+            <in>tcp_axtls.c</in>
+            <in>tcp_axtls.h</in>
+          </df>
+          <df name="ssl">
+          </df>
+          <df name="travis">
+          </df>
+        </df>
+        <df name="Homie">
+          <df name=".circleci">
+            <df name="assets">
+            </df>
+          </df>
+          <df name=".github">
+          </df>
+          <df name="data">
+            <df name="homie">
+            </df>
+          </df>
+          <df name="docs">
+            <df name="advanced-usage">
+            </df>
+            <df name="assets">
+            </df>
+            <df name="configuration">
+            </df>
+            <df name="others">
+            </df>
+            <df name="quickstart">
+            </df>
+          </df>
+          <df name="examples">
+            <df name="Broadcast">
+            </df>
+            <df name="CustomSettings">
+            </df>
+            <df name="DoorSensor">
+            </df>
+            <df name="GlobalInputHandler">
+            </df>
+            <df name="HookToEvents">
+            </df>
+            <df name="IteadSonoff">
+            </df>
+            <df name="IteadSonoffButton">
+            </df>
+            <df name="LedStrip">
+            </df>
+            <df name="LightOnOff">
+            </df>
+            <df name="SonoffDualShutters">
+            </df>
+            <df name="TemperatureSensor">
+            </df>
+          </df>
+          <df name="scripts">
+            <df name="firmware_parser">
+            </df>
+            <df name="ota_updater">
+            </df>
+          </df>
+          <df name="src">
+            <df name="Homie">
+              <df name="Boot">
+                <in>Boot.cpp</in>
+                <in>Boot.hpp</in>
+                <in>BootConfig.cpp</in>
+                <in>BootConfig.hpp</in>
+                <in>BootNormal.cpp</in>
+                <in>BootNormal.hpp</in>
+                <in>BootStandalone.cpp</in>
+                <in>BootStandalone.hpp</in>
+              </df>
+              <df name="Datatypes">
+                <in>Callbacks.hpp</in>
+                <in>ConfigStruct.hpp</in>
+                <in>Interface.cpp</in>
+                <in>Interface.hpp</in>
+              </df>
+              <df name="Utils">
+                <in>DeviceId.cpp</in>
+                <in>DeviceId.hpp</in>
+                <in>Helpers.cpp</in>
+                <in>Helpers.hpp</in>
+                <in>ResetHandler.cpp</in>
+                <in>ResetHandler.hpp</in>
+                <in>Validation.cpp</in>
+                <in>Validation.hpp</in>
+              </df>
+              <in>Blinker.cpp</in>
+              <in>Blinker.hpp</in>
+              <in>Config.cpp</in>
+              <in>Config.hpp</in>
+              <in>Constants.hpp</in>
+              <in>ExponentialBackoffTimer.cpp</in>
+              <in>ExponentialBackoffTimer.hpp</in>
+              <in>Limits.hpp</in>
+              <in>Logger.cpp</in>
+              <in>Logger.hpp</in>
+              <in>Strings.hpp</in>
+              <in>Timer.cpp</in>
+              <in>Timer.hpp</in>
+              <in>Uptime.cpp</in>
+              <in>Uptime.hpp</in>
+            </df>
+            <in>Homie.cpp</in>
+            <in>Homie.h</in>
+            <in>Homie.hpp</in>
+            <in>HomieBootMode.hpp</in>
+            <in>HomieEvent.hpp</in>
+            <in>HomieNode.cpp</in>
+            <in>HomieNode.hpp</in>
+            <in>HomieRange.hpp</in>
+            <in>HomieSetting.cpp</in>
+            <in>HomieSetting.hpp</in>
+            <in>SendingPromise.cpp</in>
+            <in>SendingPromise.hpp</in>
+            <in>StreamingOperator.hpp</in>
+          </df>
+        </df>
+      </df>
+      <df name="data">
+        <df name="homie">
+        </df>
+      </df>
+      <df name="lib">
+      </df>
+      <df name="src">
+        <in>main.cpp</in>
+        <in>main.h</in>
+      </df>
+      <in>platformio.ini</in>
+    </df>
+  </logicalFolder>
+  <projectmakefile></projectmakefile>
+  <confs>
+    <conf name="Default" type="0">
+      <toolsSet>
+        <developmentServer>localhost</developmentServer>
+        <platform>3</platform>
+      </toolsSet>
+      <compile>
+        <compiledirpicklist>
+          <compiledirpicklistitem>.</compiledirpicklistitem>
+          <compiledirpicklistitem>${AUTO_FOLDER}</compiledirpicklistitem>
+        </compiledirpicklist>
+        <compiledir>${AUTO_FOLDER}</compiledir>
+        <compilecommandpicklist>
+          <compilecommandpicklistitem>${MAKE} ${ITEM_NAME}.o</compilecommandpicklistitem>
+          <compilecommandpicklistitem>${AUTO_COMPILE}</compilecommandpicklistitem>
+        </compilecommandpicklist>
+        <compilecommand>${AUTO_COMPILE}</compilecommand>
+      </compile>
+      <dbx_gdbdebugger version="1">
+        <gdb_pathmaps>
+        </gdb_pathmaps>
+        <gdb_interceptlist>
+          <gdbinterceptoptions gdb_all="false" gdb_unhandled="true" gdb_unexpected="true"/>
+        </gdb_interceptlist>
+        <gdb_options>
+          <DebugOptions>
+          </DebugOptions>
+        </gdb_options>
+        <gdb_buildfirst gdb_buildfirst_overriden="false" gdb_buildfirst_old="false"/>
+      </dbx_gdbdebugger>
+      <nativedebugger version="1">
+        <engine>gdb</engine>
+      </nativedebugger>
+      <runprofile version="9">
+        <runcommandpicklist>
+          <runcommandpicklistitem>"${OUTPUT_PATH}"</runcommandpicklistitem>
+        </runcommandpicklist>
+        <runcommand>"${OUTPUT_PATH}"</runcommand>
+        <rundir></rundir>
+        <buildfirst>false</buildfirst>
+        <terminal-type>0</terminal-type>
+        <remove-instrumentation>0</remove-instrumentation>
+        <environment>
+        </environment>
+      </runprofile>
+    </conf>
+  </confs>
+</configurationDescriptor>

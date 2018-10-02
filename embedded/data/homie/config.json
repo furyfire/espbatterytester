@@ -1,0 +1,15 @@
+{
+  "name": "TOTP",
+  "wifi": {
+    "ssid": "FamTrue",
+    "password": "UCR2K1ERGH"
+  },
+  "mqtt": {
+    "host": "iot.eclipse.org",
+    "port": 1883,
+    "auth": false
+  },
+  "ota": {
+    "enabled": true
+  }
+}

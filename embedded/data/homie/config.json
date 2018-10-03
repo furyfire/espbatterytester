@@ -1,11 +1,11 @@
 {
-  "name": "TOTP",
+  "name": "Tester1",
   "wifi": {
     "ssid": "FamTrue",
     "password": "UCR2K1ERGH"
   },
   "mqtt": {
-    "host": "iot.eclipse.org",
+    "host": "jcktrue.dk",
     "port": 1883,
     "auth": false
   },

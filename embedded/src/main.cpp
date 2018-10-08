@@ -1,4 +1,4 @@
-#include "main.h"
+#include "config.h"
 #include <Homie.h>
 #include <Wire.h>
 #include <Adafruit_INA219.h>

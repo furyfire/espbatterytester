@@ -1,5 +1,5 @@
-#ifndef MAIN_H
-#define MAIN_H
+#ifndef CONFIG_H
+#define CONFIG_H
 
 #define STR_HELPER(x) #x
 #define STR(x) STR_HELPER(x)
@@ -17,4 +17,4 @@
 #define BAUDRATE        115200
 
 
-#endif /* MAIN_H */
+#endif /* CONFIG_H */

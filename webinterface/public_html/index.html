@@ -7,7 +7,7 @@
 
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="css/bootstrap.min.css" >
-
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-nstslider/1.0.13/jquery.nstSlider.min.css" integrity="sha256-vuA63aiTSsgH/VWwVmIzdMrm0ly9l13jGRzc/zGw2+w=" crossorigin="anonymous" />
         <title>Battery Capacitor</title>
     </head>
     <body>
@@ -21,6 +21,11 @@
                 <button type="button" class="btn btn-danger btn-lg" id="state_stop">Stop</button>
             </div>
 
+            <div>Cutoff Voltage: <span class="leftLabel"></span> V</div>
+            <div class="nstSlider" data-range_min="0" data-range_max="320" data-cur_min="0">
+                <div class="leftGrip"></div>
+            </div>
+            
 
             <div class="card-group">
                 <div class="card">
@@ -60,7 +65,7 @@
 
                     <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
                         <div class="card-body">
-                            <canvas id="chart_voltage" height="400"></canvas>
+                            <canvas id="chart_voltage" height="300"></canvas>
                         </div>
                     </div>
                 </div>
@@ -103,6 +108,7 @@
         <script src="js/bootstrap.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/paho-mqtt/1.0.1/mqttws31.min.js" type="text/javascript"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.js" integrity="sha256-J2sc79NPV/osLcIpzL3K8uJyAD7T5gaEFKlLDM18oxY=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-nstslider/1.0.13/jquery.nstSlider.min.js" integrity="sha256-3Pq5LEShujomyFvXEZyn5TtIcEkecwA4Wa6hb6SMrTQ=" crossorigin="anonymous"></script>
         <script src="config.js"></script>
         <script src="app.js"></script>
     </body>

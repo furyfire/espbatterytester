@@ -9,11 +9,13 @@ function addDataChart(chart,  label, data) {
 }
 
 counter = 1;
-function addDataTable( label, data) {
+function addDataTable( label, voltage, current, charge) {
         var markup = "<tr>"
         markup += "<th scope='row'>"+counter+"</th>";
         markup +="<td>"+label.toUTCString()+"</td>";
-        markup += "<td>"+data+ " V</td>";
+        markup += "<td>"+voltage+ " V</td>";
+        markup += "<td>"+current+ " mA</td>";
+        markup += "<td>"+charge+ " Wh</td>";
         markup += "</tr>";
         $("#table_voltage tbody").append(markup);
         counter += 1;
@@ -86,16 +88,13 @@ function onMessageArrived(message) {
     if(message.destinationName === prefix + device_id + "/measure/state")  {
            $( "#current_state" ).text(message.payloadString); 
     }
-    if(message.destinationName === prefix + device_id + "/measure/voltage")  {
-           $( "#reading_voltage" ).text(message.payloadString); 
-           addDataChart(chart, new Date(), message.payloadString);
-           addDataTable(new Date(), message.payloadString);
-    }
-    if(message.destinationName === prefix + device_id + "/measure/current")  {
-           $( "#reading_current" ).text(message.payloadString); 
-    }
-    if(message.destinationName === prefix + device_id + "/measure/charge")  {
-           $( "#reading_capacity" ).text(message.payloadString); 
+    if(message.destinationName === prefix + device_id + "/measure/measurement")  {
+        var obj = JSON.parse(message.payloadString);
+           $( "#reading_voltage" ).text(obj.voltage);
+           $( "#reading_current" ).text(obj.current);
+           $( "#reading_capacity" ).text(obj.charge);
+           addDataChart(chart, new Date(), obj.voltage);
+           addDataTable(new Date(), obj.voltage, obj.current, obj.charge);
     }
 }
 

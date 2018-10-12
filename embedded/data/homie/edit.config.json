@@ -1,0 +1,15 @@
+{
+  "name": "Tester1",
+  "wifi": {
+    "ssid": "SSID_HERE",
+    "password": "Wifi Password"
+  },
+  "mqtt": {
+    "host": "mqtt_server",
+    "port": 1883,
+    "auth": false
+  },
+  "ota": {
+    "enabled": true
+  }
+}

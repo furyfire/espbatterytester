@@ -8,7 +8,7 @@ Adafruit_INA219 ina219;
 const int MEASURE_INTERVAL = 10;
 
 unsigned long lastMeasureSent = 0;
-static long double accumulated = 0;
+static double accumulated = 0;
 HomieNode measureNode("measure", "ina219");
 enum {STATE_STOP, STATE_RUN, STATE_PAUSE, STATE_DONE} current_state = STATE_STOP;
 bool setStateHandler(const HomieRange& range, const String& value) {
@@ -22,16 +22,19 @@ bool setStateHandler(const HomieRange& range, const String& value) {
       }
       current_state = STATE_RUN;
       measureNode.setProperty("state").send("run");
+      digitalWrite(D4, LOW);
   }
   
   if(value == "pause") {
       current_state = STATE_PAUSE;
       measureNode.setProperty("state").send("pause");
+      digitalWrite(D4, HIGH);
   }
   
    if(value == "stop") {
       current_state = STATE_STOP;
       measureNode.setProperty("state").send("stop");
+      digitalWrite(D4, HIGH);
   }
 
   return true;
@@ -39,8 +42,8 @@ bool setStateHandler(const HomieRange& range, const String& value) {
 
 void loopHandler() {
     if (millis() - lastMeasureSent >= MEASURE_INTERVAL * 1000UL || lastMeasureSent == 0) {
-        long double voltage = ina219.getBusVoltage_V(); 
-        long double current = ina219.getCurrent_mA(); 
+        double voltage = ina219.getBusVoltage_V(); 
+        double current = ina219.getCurrent_mA(); 
         if(current_state == STATE_RUN) {
             accumulated += voltage * current*MEASURE_INTERVAL;
         }
@@ -49,14 +52,23 @@ void loopHandler() {
         Homie.getLogger() << "Current: " << (double)current << " mA" << endl;
         Homie.getLogger() << "Capacity: " << (double)(accumulated/3600) << " mAh" << endl;
         
-        measureNode.setProperty("voltage").send(String((double)voltage));
-        measureNode.setProperty("current").send(String((double)current));
-        measureNode.setProperty("charge").send(String((double)accumulated/3600));
+        DynamicJsonBuffer jb;
+        JsonObject& obj = jb.createObject();
+        obj["voltage"] = String(voltage,2);
+        obj["current"] = String(current,0);
+        obj["charge"] = String(accumulated/3600,3);
+        
+        String output;
+        obj.printTo(output);
+        
+        measureNode.setProperty("measurement").send(output);
         lastMeasureSent = millis();
     }
 }
 
 void setupHandler() {
+    digitalWrite(D4, HIGH);
+    pinMode(D4, OUTPUT);
      ina219.begin();
      measureNode.setProperty("state").send("run");
 }
@@ -91,9 +103,7 @@ void setup() {
     Homie.setSetupFunction(setupHandler);
     Homie.setLoopFunction(loopHandler);
 
-    measureNode.advertise("voltage");
-    measureNode.advertise("current");
-    measureNode.advertise("charge");
+    measureNode.advertise("measurement");
     measureNode.advertise("state").settable(setStateHandler);
 
     Homie.setup();

@@ -405,6 +405,7 @@
       <df name="lib">
       </df>
       <df name="src">
+        <in>config.h</in>
         <in>main.cpp</in>
         <in>main.h</in>
       </df>

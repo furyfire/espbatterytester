@@ -111,7 +111,7 @@ function onMessageArrived(message) {
            }
     }
 
-    if(message.destinationName === prefix + device_id + "/measure/cutoff/set")  {
+    if(message.destinationName === prefix + device_id + "/measure/cutoff")  {
         $("#nstSlider").attr( "data-cur_min", (message.payloadString*10));
     }
     
